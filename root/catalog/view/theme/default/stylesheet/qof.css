@@ -1,0 +1,70 @@
+[name='qof-product_info'] {
+    display: none;
+}
+.qof-input_title {
+    font-weight: bold;
+}
+label.qof-label {
+    margin: 5px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+label.qof-label:first-child {
+    margin-left: 0;
+}
+.qof-options_wrap {
+    display: flex;
+}
+.qof-input_title::first-letter {
+    text-transform: capitalize;
+}
+input.qof-input,
+textarea.qof-input {
+    margin: 5px 5px 5px 0;
+}
+textarea.qof-input {
+    resize: vertical;
+}
+input.qof-input[type='text'],
+input.qof-input[type='tel'],
+textarea.qof-input {
+    min-width: 300px;
+}
+.qof_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.5);
+}
+.qof_content_header {
+    position: relative;
+    display: flex;
+    font-weight: bold;
+    border-bottom: 1px solid #af0827;
+}
+.modal_title {
+    margin: 20px 0 10px;
+}
+.modal_close {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    top: -25px;
+    right: -10px;
+}
+.modal_close:hover {
+    color: #af0827;
+}
+.modal_close:active {
+    color: #ccc;
+}
+.qof_content_body p {
+    margin: 20px 0;
+}

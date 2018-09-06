@@ -1,0 +1,45 @@
+.json_field {
+    display: none;
+}
+.settings_panel {
+	font-size: 16px;
+}
+[data-input-type='settings_block'] {
+	width: 90%;
+}
+.item_block {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 20px 10px;
+	margin: 10px 3px;
+	position: relative;
+}
+.item_block .remove_item {
+	font-size: 20px;
+	position: absolute;
+	right: 7px;
+	top: 3px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.item_block .remove_item:hover {
+	color: #f00;
+}
+.field_set_block {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.field_set_block > * {
+	margin: 0 5px;
+}
+.add_item-wrap {
+	display: flex;
+	flex-direction: column;
+}
+.add_item-wrap > * {
+	margin: 5px auto;
+}
+.field_set_block .input_options {
+	resize: vertical;
+}
