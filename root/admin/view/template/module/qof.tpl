@@ -39,9 +39,9 @@
                   <?php } ?>
                   <?php } ?>
                 </select></td>
-                <td class="left" data-row="<?php echo 'something' ?>">
+                <td class="left" data-row="<?php echo $module_row; ?>">
                     <div class="settings_panel"></div>
-                    <textarea class="json_field" name="qof_module[<?php echo $module_row; ?>][settings_per_page]" ><?php if($module['settings_per_page']) { echo str_replace('&quot;', '"', $module['settings_per_page']); } ?></textarea>
+                    <textarea class="json_field" name="qof_module[<?php echo $module_row; ?>][settings_per_page]"><?php if($module['settings_per_page']) { echo str_replace('&quot;', '"', $module['settings_per_page']); } ?></textarea>
                     <div class="add_item-wrap" data-item-type="settings_block">
                         <textarea data-input-type="settings_block" placeholder="Введите ссылку на страницу"></textarea>
                         <a class="button add_item settings_block">Добавить настройки</a>
@@ -108,7 +108,7 @@ function addModule() {
     html += '    </select></td>';
     html += '    <td class="left" data-row="' + module_row + '">';
     html += '      <div class="settings_panel"></div>';
-    html += '      <textarea class="json_field" name="qof_module[' + module_row + '][settings_per_page]" ></textarea>';
+    html += '      <textarea class="json_field" name="qof_module[' + module_row + '][settings_per_page]"></textarea>';
     html += '      <div class="add_item-wrap" data-item-type="settings_block">';
     html += '        <textarea data-input-type="settings_block" placeholder="Введите ссылку на страницу"></textarea>';
     html += '        <a class="button add_item">Добавить настройки</a>';
