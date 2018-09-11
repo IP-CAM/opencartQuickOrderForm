@@ -153,8 +153,6 @@ $(function() {
         qofSettingBlocks.push(val);
     });
 
-    console.log(qofSettingBlocks);
-
     function createFieldSettingsBlock(fieldName, fieldSettings) {
         var inputTypes = '';
         if(fieldSettings.input_type) {
@@ -225,6 +223,9 @@ $(function() {
 
     $('body').on('click', '.add_item', function(e) {
         var row = $($(e.currentTarget).parents('td')[0]).data('row');
+        if(!qofSettingBlocks[row]) {
+            qofSettingBlocks[row] = {};
+        }
         var rowSettings = qofSettingBlocks[row];
         var current_wrap = $(e.currentTarget).parents(".add_item-wrap")[0];
         var new_item_name = $(current_wrap).children('textarea').val();
