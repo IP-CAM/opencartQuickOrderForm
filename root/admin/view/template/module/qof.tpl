@@ -39,7 +39,7 @@
                   <?php } ?>
                   <?php } ?>
                 </select></td>
-                <td class="left" data-row="<?php echo $module_row; ?>">
+                <td class="left" data-row="<?php echo 'something' ?>">
                     <div class="settings_panel"></div>
                     <textarea class="json_field" name="qof_module[<?php echo $module_row; ?>][settings_per_page]" ><?php if($module['settings_per_page']) { echo str_replace('&quot;', '"', $module['settings_per_page']); } ?></textarea>
                     <div class="add_item-wrap" data-item-type="settings_block">
@@ -106,7 +106,7 @@ function addModule() {
     html += '      <option value="<?php echo $layout['layout_id']; ?>"><?php echo addslashes($layout['name']); ?></option>';
     <?php } ?>
     html += '    </select></td>';
-    html += '    <td class="left">';
+    html += '    <td class="left" data-row="' + module_row + '">';
     html += '      <div class="settings_panel"></div>';
     html += '      <textarea class="json_field" name="qof_module[' + module_row + '][settings_per_page]" ></textarea>';
     html += '      <div class="add_item-wrap" data-item-type="settings_block">';
